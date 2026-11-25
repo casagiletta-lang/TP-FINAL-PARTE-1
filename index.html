@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Bancario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-image: url('dolares.png'); background-size: cover;">
+
+    <h1>BANCO SIMPLE</h1>
+
+    <div class="caja">
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="number" id="edad" placeholder="Edad">
+        <input type="text" id="dni" placeholder="DNI">
+        <button onclick="guardarUsuario()">Guardar Usuario</button>
+        <p id="infoUsuario"></p>
+    </div>
+
+    <div class="caja">
+        <h3>Saldos</h3>
+        <p id="saldoPesos">Pesos: $0</p>
+        <p id="saldoDolares">Dólares: US$0</p>
+
+        <input type="number" id="montoPesos" placeholder="Pesos a ingresar">
+        <button onclick="depositar()">Ingresar Pesos</button>
+
+        <br><br>
+
+        <input type="number" id="montoDolares" placeholder="Dólares ($1200)">
+        <button onclick="comprar()">Comprar Dólares</button>
+
+        <h3 id="mensaje"></h3>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
